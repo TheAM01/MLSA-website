@@ -1,0 +1,165 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./styles.css">
+    <title>MLSA Karachi</title>
+</head>
+<body>
+    <div class="navigation">
+        <div class="logo">
+            <img src="./assets/logo.png" alt="MLSA-Karachi-logo">
+        </div>
+        <div class="navigation-buttons-wrapper">
+            <a href="#" class="navigation-buttons">Home</a>
+            <a href="#about-us" class="navigation-buttons">About us</a>
+            <a href="#anchor-events" class="navigation-buttons">Events</a>
+            <a href="#anchor-team" class="navigation-buttons">Team</a>
+            <a href="#anchor-news" class="navigation-buttons">News</a>
+            <a href="#anchor-contact" class="navigation-buttons">Contact us</a>
+        </div>
+    </div>
+    <div class="carousel">
+        <div class="carousel-container">
+            <div class="carousel-image-wrapper" style="left: 0;">
+                <img src="./assets/carousel/1.jpg" alt="Slide 1" class="carousel-image">
+            </div>
+            <div class="carousel-image-wrapper" style="left: 100%;">
+                <img src="./assets/carousel/2.jpg" alt="Slide 2" class="carousel-image">
+            </div>
+            <div class="carousel-image-wrapper" style="left: 200%;">
+                <img src="./assets/carousel/3.jpg" alt="Slide 3" class="carousel-image">
+            </div>
+            <div class="carousel-image-wrapper" style="left: 300%;">
+                <img src="./assets/carousel/4.jpg" alt="Slide 4" class="carousel-image">
+            </div>
+            <div class="carousel-image-wrapper" style="left: 400%;">
+                <img src="./assets/carousel/5.jpg" alt="Slide 5" class="carousel-image">
+            </div>
+        </div>
+    </div>
+
+    <div class="large-heading" id="anchor-events">
+        Upcoming Events
+    </div>
+
+    <div class="events-showcase-wrapper">
+        <div class="event-showcase">
+            <div class="event-name">AI Quest</div>
+            <div class="event-location">Fast University, Karachi</div>
+            <img src="./assets/events/fast.png" alt="Event Image" class="event-image">
+        </div>
+        <div class="event-showcase">
+            <div class="event-name">Cloud Con</div>
+            <div class="event-location">10Pearls University, Karachi</div>
+            <img src="./assets/events/10pearls.png" alt="Event Image" class="event-image">
+        </div>
+        <div class="event-showcase">
+            <div class="event-name">MLSA Karachi Meetup</div>
+            <div class="event-location">Chai Chatt, Karachi</div>
+            <img src="./assets/events/chai-chatt.png" alt="Event Image" class="event-image">
+        </div>
+    </div>
+
+    <div class="large-heading" id="anchor-team">
+        Meet Our Core Team
+    </div>
+
+    <div class="team-showcase-wrapper" id="team-showcase-wrapper">
+
+        <button onclick="loadShowcasePage(3)" class="team-showcase-previous-button tsb" id="previous-button"><</button>
+
+        <div class="team-showcase">
+            <img src="" alt="" class="team-image">
+            <div class="team-name"></div>
+            <div class="team-designation"></div>
+        </div>
+
+        <div class="team-showcase">
+            <img src="" alt="" class="team-image">
+            <div class="team-name"></div>
+            <div class="team-designation"></div>
+        </div>
+
+        <div class="team-showcase">
+            <img src="" alt="" class="team-image">
+            <div class="team-name"></div>
+            <div class="team-designation"></div>
+        </div>
+
+        <div class="team-showcase">
+            <img src="" alt="" class="team-image">
+            <div class="team-name"></div>
+            <div class="team-designation"></div>
+        </div>
+
+        <button onclick="loadShowcasePage(2)" class="team-showcase-next-button tsb" id="next-button">></button>
+
+    </div>
+
+    <div class="news" id="anchor-news">
+        <div class="headline-group">
+            <img src="./assets/news/mlsa.gif" alt="News Thumbnail" class="news-image" id="news-image">
+            <div class="headline">
+                <div class="headline-title" id="headline-title">Latest News</div>
+                <div class="headline-subtitle" id="headline-subtitle">MLSA</div>
+                <div class="headline-description" id="headline-description">
+                    We are delighted to announced that
+                    MLSA-Karachi work as an outreach partner
+                    in JTECH 2024 by
+                    Department of computer science & software
+                    engineering
+                    in Jinnah University fo Women.
+                </div>
+            </div>
+        </div>
+        <button onclick="changeNews(1)" id="change-news-button">-></button>
+    </div>
+
+    <div class="contact-form">
+
+        <div class="large-heading" id="anchor-contact">
+            Contact Us
+        </div>
+
+        <form action="mailto:mlsakhioffical@outlook.com" method="get">
+            <input type="text" class="contact-input" placeholder="Full Name" name="name" id="contact-name">
+            <input type="email" class="contact-input" placeholder="Email" name="email" id="contact-email">
+            <input type="tel" class="contact-input" placeholder="Contact No" name="number" id="contact-number">
+            <textarea class="contact-input" placeholder="Your Message" name="message" id="contact-message"></textarea>
+            <input type="submit" value="Send" class="submit"/>
+        </form>
+
+    </div>
+
+    <div class="footer">
+        <div class="footer-heading">
+            Microsoft Learn Student Ambassadors-Karachi Chapter
+        </div>
+
+        <div class="footer-heading">
+            Contact Information
+        </div>
+
+        <img src="./assets/icons/email.png" alt="email" id="email-icon">
+
+        <a href="mailto:mlsakhioffical@outlook.com" class="email-link">mlsakhioffical@outlook.com</a>
+
+        <div class="social-icons">
+            <img src="./assets/icons/facebook.png" alt="" class="social-icon">
+            <img src="./assets/icons/instagram.png" alt="" class="social-icon">
+            <img src="./assets/icons/linkedin.png" alt="" class="social-icon">
+            <img src="./assets/icons/twitter.png" alt="" class="social-icon">
+        </div>
+
+        <div class="social-handle">
+            mlsa_karachi
+        </div>
+    </div>
+
+    <script src="https://utils-am.vercel.app/script.js"></script>
+    <script src="./script.js"></script>
+</body>
+</html>
